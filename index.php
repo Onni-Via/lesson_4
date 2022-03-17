@@ -1,14 +1,9 @@
 <?php
 include __DIR__ . '/function.php'; 
-echo readsGuestPosts();
-
+  
 $guestBook = readsGuestPosts();
 
-foreach ($guestBook as $note) {
-    echo $note;
-}
 ?>
-
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -16,9 +11,15 @@ foreach ($guestBook as $note) {
   <title>Гостевая книга</title>
 </head>
 <body>
-<form action="/added_entries" method="post" enctype="multipart/form-data">
+<h1>Гостевая книга</h1>
+<p><strong>Добавьте свою запись в гостевую книгу</strong></p>
+<form action="/sprint_f/lesson_4/added_entries.php" method="post" enctype="multipart/form-data">
     <input type="text" name="newNote">
     <input name="submitNote" type="submit" value="Отправить">
+<h2>Записи гостевой книги</h2>
+<?php foreach ($guestBook as $note) {
+    echo $note;
+} ?>
 </form>
 </body>
 </html>
