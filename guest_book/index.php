@@ -13,7 +13,7 @@ $guestBook = readsGuestPosts();
 <body>
 <h1>Гостевая книга</h1>
 <p><strong>Добавьте свою запись в гостевую книгу</strong></p>
-<form action="/sprint_f/lesson_4/added_entries.php" method="post" enctype="multipart/form-data">
+<form action="/sprint_f/lesson_4/guest_book/added_entries.php" method="post" enctype="multipart/form-data">
     <input type="text" name="newNote">
     <input name="submitNote" type="submit" value="Отправить">
 <h2>Записи гостевой книги</h2>
