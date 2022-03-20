@@ -5,6 +5,7 @@ if (isset($_FILES['myimg']) ) {
     }
 }
 
+$validType = '0';
 if ($_FILES['myimg']['type'] == 'image/png') {
 	$validType = '.png';
 } elseif ($_FILES['myimg']['type'] == 'image/jpeg') {

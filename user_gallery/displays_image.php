@@ -13,7 +13,7 @@ unset($imgNamesArray[(array_search('..', $imgNamesArray))]);
 </head>
 <body>
 <?php foreach ($imgNamesArray as $imgNames) { ?>
-<img src="http://localhost/sprint_f/lesson_4/gallery_loading/images/<?php echo $imgNames; ?> " height="200px">
+<img src="http://localhost/sprint_f/lesson_4/user_gallery/images/<?php echo $imgNames; ?> " height="200px">
 
 <?php  } ?>
 
