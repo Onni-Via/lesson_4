@@ -2,8 +2,10 @@
 include __DIR__ . '/upload.php';
 
 $imgNamesArray = scandir(__DIR__ . '/images/');
-unset($imgNamesArray[(array_search('.', $imgNamesArray))]);
-unset($imgNamesArray[(array_search('..', $imgNamesArray))]);
+
+$superfluous = ['.', '..'];
+$imgNamesArray = array_diff($imgNamesArray, $superfluous); // в мануале найдена функция array_intersect, после чего найдена обратная функция
+
 ?>
 <!DOCTYPE HTML>
 <html>
