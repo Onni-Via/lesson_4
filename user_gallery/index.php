@@ -1,6 +1,9 @@
 <?php
 include __DIR__ . '/upload.php';
 
+$imgNamesArray = scandir(__DIR__ . '/images/');
+unset($imgNamesArray[(array_search('.', $imgNamesArray))]);
+unset($imgNamesArray[(array_search('..', $imgNamesArray))]);
 ?>
 <!DOCTYPE HTML>
 <html>
