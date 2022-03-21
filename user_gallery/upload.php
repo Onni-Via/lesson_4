@@ -7,4 +7,6 @@ if (isset($_FILES['myimg']) ) {
         echo "Ошибка загрузки изображения";
     }
 }
-header('Location: http://localhost/sprint_f/lesson_4/user_gallery/index.php');
+?>
+</br>
+<a href="/sprint_f/lesson_4/user_gallery/index.php">Назад</a>
